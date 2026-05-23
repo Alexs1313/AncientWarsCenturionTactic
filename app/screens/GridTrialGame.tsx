@@ -353,7 +353,7 @@ const styles = StyleSheet.create({
   grid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: GRID_GAP,
+    gap: 6,
     alignSelf: 'center',
   },
   tile: {
