@@ -1,4 +1,4 @@
-package com.ancientwarscenturiontactic
+package com.ancient.centurion.tactic
 
 import android.app.Application
 import com.facebook.react.PackageList

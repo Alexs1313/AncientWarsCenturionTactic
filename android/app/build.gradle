@@ -77,9 +77,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.ancientwarscenturiontactic"
+    namespace "com.ancient.centurion.tactic"
     defaultConfig {
-        applicationId "com.ancientwarscenturiontactic"
+        applicationId "com.ancient.centurion.tactic"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

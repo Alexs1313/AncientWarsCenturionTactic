@@ -53,8 +53,6 @@ const AncientBattls = () => {
   return (
     <Layyout bounce={false}>
       <View style={[styles.screen, {paddingTop: insets.top + 8}]}>
-        <View style={styles.overlay} pointerEvents="none" />
-
         <View style={styles.header}>
           <Text style={styles.heading}>Ancient Battles</Text>
           <Text style={styles.subheading}>Read battle stories</Text>

@@ -8,6 +8,7 @@ import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {POINTS_PER_QUESTION, QUIZ_TOTAL} from '../data/tacticsQuizQuestions';
 import type {RootStackParamList} from '../types/navigation';
 import {battleColors, battleFonts} from '../theme/battleTheme';
+import Layyout from '../components/Layyout';
 
 type ResultsRoute = RouteProp<RootStackParamList, 'TacticsQuizResults'>;
 
@@ -46,12 +47,10 @@ const TacticsQuizResults = () => {
   };
 
   return (
-    <View style={[styles.root]}>
-      <ScrollView
-        showsVerticalScrollIndicator={false}
-        contentContainerStyle={{
-          flexGrow: 1,
-          width: '100%',
+    <Layyout>
+      <View
+        style={{
+          flex: 1,
           paddingHorizontal: 20,
           paddingTop: insets.top + 24,
         }}>
@@ -111,8 +110,8 @@ const TacticsQuizResults = () => {
             </Pressable>
           </View>
         </View>
-      </ScrollView>
-    </View>
+      </View>
+    </Layyout>
   );
 };
 

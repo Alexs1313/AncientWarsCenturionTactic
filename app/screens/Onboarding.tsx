@@ -82,7 +82,7 @@ const Onboarding = () => {
         <View style={styles.header}>
           <View style={styles.appIconWrap}>
             <Image
-              source={require('../assets/images/appicon.png')}
+              source={require('../assets/images/onboardinghero1.png')}
               style={styles.appIcon}
               resizeMode="cover"
             />

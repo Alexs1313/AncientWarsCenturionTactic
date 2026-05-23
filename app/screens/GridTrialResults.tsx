@@ -37,7 +37,7 @@ const GridTrialResults = () => {
           {paddingTop: insets.top + 40, paddingBottom: insets.bottom + 24},
         ]}>
         <Text style={styles.swords}>⚔️</Text>
-        <Text style={styles.title}>BATTLE OVER</Text>
+        <Text style={styles.title}>BATTLE OVER!</Text>
 
         <View style={styles.statsCard}>
           <View style={styles.statItem}>

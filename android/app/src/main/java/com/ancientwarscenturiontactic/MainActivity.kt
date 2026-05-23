@@ -1,4 +1,4 @@
-package com.ancientwarscenturiontactic
+package com.ancient.centurion.tactic
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

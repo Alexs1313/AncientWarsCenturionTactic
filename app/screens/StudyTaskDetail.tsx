@@ -26,6 +26,7 @@ import {
   getCompletedTask,
 } from '../utils/studyTasksStorage';
 import {battleColors, battleFonts} from '../theme/battleTheme';
+import Layyout from '../components/Layyout';
 
 type DetailRoute = RouteProp<RootStackParamList, 'StudyTaskDetail'>;
 
@@ -98,16 +99,11 @@ const StudyTaskDetail = () => {
   };
 
   return (
-    <View style={styles.root}>
-      <ScrollView
-        keyboardShouldPersistTaps="handled"
-        showsVerticalScrollIndicator={false}
-        contentContainerStyle={[
+    <Layyout>
+      <View
+        style={[
           styles.scrollContent,
-          {
-            paddingTop: insets.top + 8,
-            paddingBottom: insets.bottom + 100,
-          },
+          {paddingTop: insets.top + 8, paddingBottom: insets.bottom + 100},
         ]}>
         <View style={styles.topBar}>
           <Pressable
@@ -158,7 +154,7 @@ const StudyTaskDetail = () => {
             textAlignVertical="top"
           />
         </View>
-      </ScrollView>
+      </View>
 
       <View
         style={[
@@ -181,7 +177,7 @@ const StudyTaskDetail = () => {
           </LinearGradient>
         </Pressable>
       </View>
-    </View>
+    </Layyout>
   );
 };
 
@@ -307,7 +303,7 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: battleColors.background,
+
     paddingTop: 12,
   },
   completeWrap: {

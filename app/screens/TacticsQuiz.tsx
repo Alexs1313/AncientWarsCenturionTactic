@@ -20,6 +20,7 @@ import {
 import type {RootStackParamList} from '../types/navigation';
 import {saveBestQuizScore} from '../utils/tacticsQuizStorage';
 import {battleColors, battleFonts} from '../theme/battleTheme';
+import Layyout from '../components/Layyout';
 
 const OPTION_LABELS = ['A', 'B', 'C', 'D'];
 
@@ -79,13 +80,12 @@ const TacticsQuiz = () => {
   );
 
   return (
-    <View style={styles.root}>
-      <ScrollView
-        contentContainerStyle={[
+    <Layyout>
+      <View
+        style={[
           styles.scrollContent,
           {paddingTop: insets.top + 8, paddingBottom: insets.bottom + 24},
-        ]}
-        showsVerticalScrollIndicator={false}>
+        ]}>
         <View style={styles.topBar}>
           <Pressable
             onPress={() => setPaused(true)}
@@ -172,7 +172,7 @@ const TacticsQuiz = () => {
             </LinearGradient>
           </Pressable>
         ) : null}
-      </ScrollView>
+      </View>
 
       {paused ? (
         <View style={styles.pauseOverlay}>
@@ -206,7 +206,7 @@ const TacticsQuiz = () => {
           </Pressable>
         </View>
       ) : null}
-    </View>
+    </Layyout>
   );
 };
 
